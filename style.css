@@ -51,10 +51,11 @@ nav {
 }
 
 .information {
+  position: absolute;
   width: 1000px;
   height: 1000px;
   top: 50%;
-  left: -10%;
+  left: 0%;
   transform: translateY(-50%);
 }
 
@@ -74,6 +75,8 @@ nav {
 
 .feature {
   position: absolute;
+  display: flex;
+  color: #fff;
 }
 
 .one {
@@ -94,4 +97,36 @@ nav {
 .four {
   bottom: 150px;
   right: 350px;
+}
+
+.mobile {
+  position: absolute;
+  width: 200px;
+  top: 50%;
+  left: 35%;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.controls {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.controls h3 {
+  margin: 15px 0;
+  color: #fff;
+}
+
+#upBtn {
+  width: 15px;
+  cursor: pointer;
+}
+
+#downBtn {
+  width: 15px;
+  cursor: pointer;
+  transform: rotate(180deg);
 }
